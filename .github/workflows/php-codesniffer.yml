@@ -1,4 +1,4 @@
-name: PHP CodeSniffer with Email Notification
+name: PHP CodeSniffer によるコードチェック実行
 
 on:
   pull_request:
@@ -28,5 +28,5 @@ jobs:
         id: phpcs
         run: |
           phpcs --standard=.github/phpcs.xml src/
-        continue-on-error: true
+        continue-on-error: false
 
