@@ -22,7 +22,7 @@ jobs:
         run: composer install
 
       - name: Install PHP CodeSniffer
-        run:  composer require squizlabs/php_codesniffer
+        run: composer global require "squizlabs/php_codesniffer=*"
 
       - name: Run PHP CodeSniffer
         id: phpcs
